@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+
+<div class="add">
+    <form action="/addmoney" method="post">
+        <input type="email" name="Aemail" placeholder="Enter your mail">
+        <input type="number" name="addmoney" placeholder="Enter your amount" onkeyup="this.value=this.value.replace(/[^0-9]/g, '')">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    
+<%- include('partials/footer') %>

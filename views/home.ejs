@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+
+    <div class="box" id="heading">
+        <h1>Otp Sender</h1>
+    </div>
+    <div>
+        <form action="/sendmessage" method="post" class="item" enctype="multipart/form-data">
+
+            <div class="intput-div">
+                <input type="text" name="text" id="" placeholder="enter your text and otp" class="input-element">
+            </div>
+            <div class="subDiv">
+                <div class="intput-div">
+                    <input type="number" class="input-element" name="number" id="" placeholder="enter your phone number"
+                        autocomplete="on">
+                </div>
+                <div class="ordiv">
+                    <h2>Or</h2>
+                </div>
+                <div class="intput-div">
+                    <label for="file">Contact File</label>
+                    <input type="file" class="input-element" name="avatar" />
+                </div>
+            </div>
+
+            <div class="intput-div">
+                <input class="submit" type="submit" value="submit">
+            </div>
+
+            
+
+        </form>
+    </div>
+
+    <%- include('partials/footer') %>
